@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liviya Green - Shiksha, Swasthya, Paryavaran</title>
+    <meta name="description" content="Cultivating Discipline, Health, and a Greener Future for Our Children">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home" onclick="closeNav()"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about" onclick="closeNav()"><i class="fa-solid fa-address-card"></i> About</a>
+        <a href="#register" onclick="closeNav()"><i class="fa-solid fa-id-card"></i> Register Portal</a>
+        <a href="#gallery" onclick="closeNav()"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="#syllabus" onclick="closeNav()"><i class="fa-solid fa-book"></i> Syllabus</a>
+        <a href="#vacancy" onclick="closeNav()"><i class="fa-solid fa-briefcase"></i> Vacancy</a>
+        <a href="#contact" onclick="closeNav()"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="menu-btn" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-tree"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>LIVIYA GREEN</h1>
+                    <p>Cultivating Discipline, Health, and a Greener Future for Our Children</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Desktop Navigation (visible on laptop/desktop only) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li><a href="#register"><i class="fa-solid fa-id-card"></i> Register Portal</a></li>
+                <li><a href="#gallery"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                <li><a href="#syllabus"><i class="fa-solid fa-book"></i> Syllabus</a></li>
+                <li><a href="#vacancy"><i class="fa-solid fa-briefcase"></i> Vacancy</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="badge">
+                <!-- Sprout Icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M7 20h10M12 20v-8m0 0c0-3.5 2.5-6 6-6 0 4-2.5 6-6 6zm0 0c0-3.5-2.5-6-6-6 0 4 2.5 6 6 6z" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Liviya Green School
+            </div>
+
+            <h1 class="heading">
+                Shiksha,<br>
+                Swasthya,<br>
+                <span class="highlight">Paryavaran</span>
+            </h1>
+
+            <p class="description">
+                Empowering Children for a Brighter, Cleaner Tomorrow
+            </p>
+
+            <div class="cta-group">
+                <a href="https://forms.gle/GaVe1BigfjyJFupU8" target="_blank" class="btn btn-primary">
+                    Apply for Registration
+                    <span style="font-size: 1.1rem; line-height: 0;">&rarr;</span>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    About & Exam Guidance
+                </a>
+            </div>
+        </section>
+
+        <!-- Feature Cards Section -->
+        <section id="about" class="section">
+            <div class="cards-grid">
+                
+                <!-- Education & Discipline -->
+                <div class="card card-blue">
+                    <div class="card-header">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Pariksha Taiyari aur Anushasan</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=400" class="card-img" alt="Education">
+                    <div class="card-body">
+                        <ul>
+                            <li>Set study schedules & time management</li>
+                            <li>Focusing on core conceptual learning</li>
+                            <li>Maintaining a positive & disciplined attitude</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Health & Fitness -->
+                <div class="card card-orange">
+                    <div class="card-header">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <span>Swasthya aur Fitness</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=400" class="card-img" alt="Health">
+                    <div class="card-body">
+                        <ul>
+                            <li>Nutritious eating & balanced diet</li>
+                            <li>Daily outdoor exercise and games</li>
+                            <li>Personal hygiene and proper sleep</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Environment -->
+                <div class="card card-green">
+                    <div class="card-header">
+                        <i class="fa-solid fa-recycle"></i>
+                        <span>Swachh Paryavaran</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=400" class="card-img" alt="Environment">
+                    <div class="card-body">
+                        <ul>
+                            <li>Cleanliness in daily life & surrounding</li>
+                            <li>Waste reduction and tree plantation</li>
+                            <li>Love and care for natural resources</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Registration Portal Section -->
+        <section id="register" class="section register-container">
+            <div class="register-header">
+                <h1>Registration Portal</h1>
+                <p>Join Liviya Green family and be part of creating a cleaner, healthier, and educated future for our children</p>
+            </div>
+
+            <div class="register-content">
+                <div class="register-left">
+                    <h2>You convey the idea, and we deliver a refined interface.</h2>
+                    <p>We're one of the first social welfare agencies that team up with startups, agencies, and founders to design a digital and clean world.</p>
+                    <a href="#vacancy" class="btn">Explore Positions</a>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="60">0</div>
+                        <div class="stat-label">Branches</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="16" data-suffix="k+">0</div>
+                        <div class="stat-label">Registrations</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="4" data-suffix="k+">0</div>
+                        <div class="stat-label">Happy Employees</div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="20" data-suffix="k+">0</div>
+                        <div class="stat-label">Vacancies</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-actions">
+                <a href="https://forms.gle/GaVe1BigfjyJFupU8" target="_blank" class="btn-register">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    Apply for Registration
+                </a>
+                <a href="#" class="btn-verify">
+                    <i class="fa-solid fa-check-circle"></i>
+                    Candidate Verification Status
+                </a>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="gallery-header">
+                <h3><i class="fa-solid fa-images"></i> Activity Gallery</h3>
+                <label class="upload-btn">
+                    <i class="fa-solid fa-upload"></i> Upload Image
+                    <input type="file" id="imageUploader" accept="image/*" multiple>
+                </label>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <img src="https://i.ibb.co/35YxggdC/IMG-20260901-132020.png" alt="Activity 1">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=300" alt="Activity 2">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=300" alt="Activity 3">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=300" alt="Activity 4">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=300" alt="Activity 5">
+            </div>
+        </section>
+
+        <!-- Syllabus Section -->
+        <section id="syllabus" class="section syllabus-container">
+            
+            <!-- Header Banner -->
+            <div class="header-banner">
+                <h1>छात्र मार्गदर्शन एवं सामाजिक जागरूकता पाठ्यक्रम</h1>
+                <p>Student Guidance & Social Awareness Media Content Syllabus</p>
+                <div class="badge-container">
+                    <span class="badge-tag">टीम कार्य विभाजन</span>
+                    <span class="badge-tag">फार्मसिस्ट</span>
+                    <span class="badge-tag">इंटरव्यूअर</span>
+                    <span class="badge-tag">वीडियो एडिटर</span>
+                    <span class="badge-tag">फोटोग्राफर</span>
+                    <span class="badge-tag">स्टूडेंट गाइड</span>
+                </div>
+            </div>
+
+            <!-- Intro Box -->
+            <div class="intro-box">
+                <strong>पाठ्यक्रम का उद्देश्य (Course Objective):</strong><br>
+                यह पाठ्यक्रम छात्रों एवं समाज को जागरूक करने, उनका सही मार्गदर्शन करने और सामाजिक मुद्दों पर प्रभावकारी मीडिया सामग्री (Media Content) तैयार करने के लिए डिज़ाइन किया गया है।
+            </div>
+
+            <!-- Section 1: Role Breakdown -->
+            <h2>1. विभिन्न पदों के अनुसार मुख्य भूमिकाएँ (Role Breakdown)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 24%;">पद (Position)</th>
+                        <th style="width: 38%;">मुख्य दायित्व (Key Responsibilities)</th>
+                        <th style="width: 38%;">आवश्यक कौशल एवं आउटपुट (Skills & Output)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>स्टूडेंट गाइड / मेंटर</strong></td>
+                        <td>विषयों पर शोध करना, छात्रों के प्रश्नों का समाधान, परामर्श तथा प्रेरणादायक कंटेंट तैयार करना।</td>
+                        <td>सहानुभूति, सम्प्रेषण कौशल, विषय की स्पष्ट समझ, गाइडिंग स्क्रिप्ट।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>इंटरव्यूअर / एंकर</strong></td>
+                        <td>विशेषज्ञों, पीड़ितों, छात्रों और समाज सुधारकों के साथ सजीव एवं अर्थपूर्ण साक्षात्कार और एंकरिंग करना।</td>
+                        <td>सटीक प्रश्नोत्तर कला, आत्मविश्वास, एक्टिव लिसनिंग, इंटरव्यू पॉडकास्ट।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>फार्मसिस्ट</strong></td>
+                        <td>दवाएं देना, दवा के इस्तेमाल की जानकारी देना, दवाओं के साइड इफेक्ट्स से बचाना।</td>
+                        <td>फार्मसिस्ट डॉक्टर और मरीज के बीच की एक बेहद जरूरी कड़ी हैं।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>फोटोग्राफर / वीडियोग्राफर</strong></td>
+                        <td>विषय से संबंधित वास्तविक विज़ुअल्स, बी-रोल कवरेज, और भावपूर्ण तस्वीरों को कैप्चर करना।</td>
+                        <td>कैमरा एंगल, फ्रेमिंग, लाइटिंग, रील/शॉर्ट्स सिनेमैटोग्राफी।</td>
+                    </tr>
+                    <tr>
+                        <td><strong>वीडियो एडिटर</strong></td>
+                        <td>फुटेज को व्यवस्थित करना, स्टोरीटेलिंग, बैकग्राउंड म्यूज़िक, टेक्स्ट/सबटाइटल और कलर ग्रेडिंग करना।</td>
+                        <td>Premiere Pro / CapCut, पेसिंग, साउंड डिज़ाइन, सोशल मीडिया फॉर्मेट्स।</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Section 2: Detailed Modules -->
+            <h2>2. विषयवार विस्तृत पाठ्यक्रम (Detailed Module-wise Syllabus)</h2>
+
+            <!-- Module 1 -->
+            <div class="module-card m1">
+                <div class="module-header"><span class="topic-tag">विषय 1</span> महिलाओं के प्रति जागरूकता एवं सम्मान</div>
+                <p><strong>पाठ्य सामग्री:</strong> महिलाओं के अधिकार, कार्यस्थल एवं शिक्षा क्षेत्र में सुरक्षा, लिंग संवेदनशीलता और समाज में महिलाओं के योगदान पर जागरूकता फैलाना।</p>
+                <ul>
+                    <li><strong>विद्यार्थियों के लिए संदेश:</strong> महिलाओं का सम्मान, समानता का भाव और कानूनी सुरक्षा अधिकारों की जानकारी।</li>
+                </ul>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="module-card m2">
+                <div class="module-header"><span class="topic-tag">विषय 2</span> पढ़ने वाले छात्र-छात्राओं के साथ समाज का व्यवहार</div>
+                <p><strong>पाठ्य सामग्री:</strong> विद्यार्थियों पर सामाजिक एवं पारिवारिक दबाव, पढ़ाई के माहौल में पड़ोसियों व समाज की भूमिका।</p>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="module-card m3">
+                <div class="module-header"><span class="topic-tag">विषय 3</span> साफ-सफाई एवं व्यक्तिगत स्वच्छता</div>
+                <p><strong>पाठ्य सामग्री:</strong> व्यक्तिगत स्वच्छता, विद्यालय व आसपास की सफ़ाई, कचरा प्रबंधन और स्वास्थ्य पर इसके प्रभाव।</p>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="module-card m4">
+                <div class="module-header"><span class="topic-tag">विषय 4</span> विदेशी रहन-सहन के तौर-तरीके</div>
+                <p><strong>पाठ्य सामग्री:</strong> अंतरराष्ट्रीय संस्कृति, कार्य संस्कृति, आधुनिक रहन-सहन, समय की पाबंदी और वैश्विक शिष्टाचार।</p>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="module-card m5">
+                <div class="module-header"><span class="topic-tag">विषय 5</span> कम अंक लाने वाले विद्यार्थियों को प्रेरित करना</div>
+                <p><strong>पाठ्य सामग्री:</strong> अंक ही सब कुछ नहीं हैं; असफलता को सफलता की सीढ़ी बनाना, वैकल्पिक करियर विकल्प।</p>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="module-card m6">
+                <div class="module-header"><span class="topic-tag">विषय 6</span> अपने हक की लड़ाई के नियम</div>
+                <p><strong>पाठ्य सामग्री:</strong> मौलिक अधिकार, उपभोक्ता अधिकार, छात्र अधिकार, आरटीआई और अन्याय के खिलाफ आवाज उठाने के कानूनी तरीके।</p>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="module-card m7">
+                <div class="module-header"><span class="topic-tag">विषय 7</span> समाज में फैल रही असमानता और अफवाहें</div>
+                <p><strong>पाठ्य सामग्री:</strong> आर्थिक व सामाजिक असमानता, सोशल मीडिया पर फैलती फर्जी खबरें और डिजिटल साक्षरता।</p>
+            </div>
+
+            <!-- Module 8 -->
+            <div class="module-card m8">
+                <div class="module-header"><span class="topic-tag">विषय 8</span> पर्यावरण के प्रति जागरूकता</div>
+                <p><strong>पाठ्य सामग्री:</strong> जल संरक्षण, वृक्षारोपण, प्लास्टिक का बहिष्कार, प्रदूषण नियंत्रण और वैश्विक तापमान।</p>
+            </div>
+
+            <!-- Workflow Table -->
+            <h2>3. प्रैक्टिकल मीडिया प्रोडक्शन कार्यप्रवाह</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>चरण (Phase)</th>
+                        <th>गतिविधि (Activity)</th>
+                        <th>जिम्मेदार पद (Responsible Post)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. प्री-प्रोडक्शन</strong></td>
+                        <td>विषय चयन, रिसर्च, स्क्रिप्ट लेखन और इंटरव्यू के प्रश्नों की तैयारी।</td>
+                        <td>स्टूडेंट गाइड & कंटेंट राइटर</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. प्रोडक्शन</strong></td>
+                        <td>साक्षात्कार रिकॉर्डिंग, बी-रोल शॉट्स, वॉइस-ओवर एवं लाइव फोटोग्राफी।</td>
+                        <td>इंटरव्यूअर & फोटोग्राफर</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. पोस्ट-प्रोडक्शन</strong></td>
+                        <td>वीडियो कटिंग, ऑडियो मिक्सिंग, ग्राफिक्स, सबटाइटलिंग व फाइनल एक्सपोर्ट।</td>
+                        <td>वीडियो एडिटर</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. पब्लिशिंग एवं फीडबैक</strong></td>
+                        <td>यूट्यूब/सोशल मीडिया पर पब्लिश करना, छात्रों के कमेंट्स का उत्तर देना।</td>
+                        <td>स्टूडेंट गाइड & सोशल मीडिया टीम</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Vacancy Section -->
+        <section id="vacancy" class="section vacancy-container">
+            <div class="vacancy-header">
+                <h1>करियर एवं भर्ती अवसर (Career & Vacancy Portal)</h1>
+                <p>शिक्षा, स्वास्थ्य एवं पर्यावरण (Education, Health & Environment Initiatives)</p>
+            </div>
+
+            <!-- Category 1: Education -->
+            <div class="category-title">📚 शिक्षा विभाग (Education Sector)</div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>1. Student Guide & Mentor (छात्र मार्गदर्शक एवं मेंटर)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    छात्रों को शैक्षणिक, करियर एवं व्यक्तिगत विकास के लिए उचित मार्गदर्शन और मेंटरशिप प्रदान करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> Graduation / Post Graduation</span>
+                    <span><b>अनुभव:</b> 0-2 वर्ष</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>2. Question Maker (प्रश्न पत्र निर्माता)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    विभिन्न विषयों और प्रतियोगी परीक्षाओं के लिए गुणवत्तापूर्ण प्रश्न पत्र और टेस्ट सीरीज़ तैयार करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> Subject Matter Expert (SME)</span>
+                    <span><b>अनुभव:</b> 0-3 वर्ष</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>3. Examiner (परीक्षक)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    उत्तर पुस्तिकाओं का मूल्यांकन करना, परीक्षा प्रक्रिया की निगरानी करना एवं निष्पक्ष परिणाम सुनिश्चित करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> B.Ed / Master's Degree</span>
+                    <span><b>अनुभव:</b> 2+ वर्ष</span>
+                </div>
+            </div>
+
+            <!-- Category 2: Health -->
+            <div class="category-title">🏥 स्वास्थ्य विभाग (Health Sector)</div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>4. Pharmacist (फार्मासिस्ट)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    दवाइयों का प्रबंधन, वितरण एवं मरीजों को स्वास्थ्य संबंधी सही परामर्श व जागरूकता प्रदान करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> B.Pharm / D.Pharm</span>
+                    <span><b>अनुभव:</b> 0-3 वर्ष</span>
+                </div>
+            </div>
+
+            <!-- Category 3: Media & Environment -->
+            <div class="category-title">🌿 पर्यावरण, मीडिया एवं जागरूकता (Environment & Media Cell)</div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>5. Interviewer / Anchor (साक्षात्कारकर्ता / एंकर)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    शिक्षा, स्वास्थ्य एवं पर्यावरण जागरूकता कार्यक्रमों के लिए इंटरव्यू, पॉडकास्ट एवं ग्राउंड रिपोर्टिंग का संचालन करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> Journalism / Mass Comm</span>
+                    <span><b>अनुभव:</b> 1+ वर्ष</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>6. Photographer / Videographer (फोटोग्राफर / वीडियोग्राफर)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    पर्यावरण अभियानों, शैक्षणिक कार्यक्रमों एवं स्वास्थ्य शिविरों की फोटो और वीडियो कवरेज करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> Diploma/Degree in Photography</span>
+                    <span><b>अनुभव:</b> 1+ वर्ष</span>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-title">
+                    <span>7. Video Editor (वीडियो एडिटर)</span>
+                    <span class="job-badge">Open</span>
+                </div>
+                <div class="job-desc">
+                    जागरूकता अभियानों, डॉक्यूमेंट्री और एजुकेशनल कंटेंट के लिए आकर्षक वीडियो एडिट करना।
+                </div>
+                <div class="job-details">
+                    <span><b>योग्यता:</b> Premiere Pro / Final Cut Pro / DaVinci</span>
+                    <span><b>अनुभव:</b> 1+ वर्ष</span>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> greenikae@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Govt. Process</p>
+                <p><i class="fa-solid fa-location-dot"></i> HSR MG Road, Indiranagar, Bangalore India - 3003</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a>
+                <a href="#syllabus"><i class="fa-solid fa-angle-right"></i> Syllabus</a>
+                <a href="#vacancy"><i class="fa-solid fa-angle-right"></i> Vacancy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Office Time</h4>
+                <p><i class="fa-regular fa-clock"></i> 11:00 AM - 4:00 PM</p>
+                <p>Monday - Friday</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Shiksha Swasthya Paryavaran by Liviya Green. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Sidebar Functions
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+
+        // Close sidebar when clicking outside
+        document.addEventListener('click', function(event) {
+            const sidebar = document.getElementById('mySidebar');
+            const menuBtn = document.querySelector('.menu-btn');
+            
+            if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                closeNav();
+            }
+        });
+
+        // Image Upload Logic
+        document.getElementById('imageUploader').addEventListener('change', function(event) {
+            const files = event.target.files;
+            const grid = document.getElementById('galleryGrid');
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.alt = 'Uploaded Image';
+                        grid.insertBefore(img, grid.firstChild);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== 'javascript:void(0)') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+
+        // Live Counting Animation for Stats
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        const animateCounter = (counter) => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const suffix = counter.getAttribute('data-suffix') || '';
+                const count = +counter.innerText.replace(suffix, '');
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc) + suffix;
+                    setTimeout(updateCount, 15);
+                } else {
+                    counter.innerText = target + suffix;
+                }
+            };
+            updateCount();
+        };
+
+        // Intersection Observer for counter animation
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    if (counter.innerText === '0' || counter.innerText === '0k+') {
+                        animateCounter(counter);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    </script>
+</body>
+</html>
