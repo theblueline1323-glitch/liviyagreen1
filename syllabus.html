@@ -7,25 +7,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
-          --primary: #2563eb;
-            --primary-hover: #1d4ed8;
-            --bg: #f1f5f9;
-            --card-bg: #ffffff;
-            --text: #0f172a;
-            --text-muted: #64748b;
-            --border: #cbd5e1;
-            --success: #16a34a;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         body {
             background-color: #f4f8f4;
-            color: #333;  }
+            color: #333;
+          
+        }
+
         /* Top Header */
         header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            background:linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%) ;
             padding: 15px 25px;
             display: flex;
             align-items: center;
@@ -51,7 +47,7 @@
         .logo-icon {
             width: 50px;
             height: 50px;
-            background: #e8f5e9;
+            background: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -92,7 +88,7 @@
             padding: 12px 25px;
             text-decoration: none;
             font-size: 16px;
-            color: #2e7;
+            color: #1b5e;
             display: block;
             font-weight: 600;
             transition: 0.2s;
@@ -114,13 +110,13 @@
 
         /* Container */
         .container {
+            display: flex;
+            flex-direction: column;
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 15px;
-        
-         width: 100%; max-width: 620px; background: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); padding: 32px; border: 1px solid var(--border); }
-        
-        /* syllabus */
+            margin: 40px auto;
+            padding: 0 15px;  
+            gap: 14px; 
+        }
       
       .header-banner {
         background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
@@ -271,13 +267,49 @@
     }
     
         /* Footer */
-      
-       .footer-bottom {
+        footer {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: #e8f5e9;
+            padding: 40px 20px 15px 20px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-col h4 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2e7d32;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #c8e6c9;
+            font-size: 14px;
+            text-decoration: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .footer-col i {
+            margin-right: 8px;
+            color: #81c784;
+        }
+
+        .footer-bottom {
             text-align: center;
             padding-top: 15px;
             border-top: 1px solid #1b5e20;
             font-size: 13px;
-            color: #2e7;
+            color: #1b5e;
         }
     </style>
 </head>
@@ -285,15 +317,15 @@
     <!-- Sidebar Navigation -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="#about"><i class="fa-solid fa-address-card"></i> Register Portal</a>
+        <a href="Home.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#register"><i class="fa-solid fa-address-card"></i> Register Portal</a>
         <a href="#member"><i class="fa-solid fa-users"></i> Member</a>
-        <a href="#syllabus"><i class="fa-solid fa-book"></i> Syllabus</a>
-        <a href="https://forms.gle/GaVe1BigfjyJFupU8"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+        <a href="syllabus.html" target="_blank"><i class="fa-solid fa-book"></i> Syllabus</a>
+        <a href="https://forms.gle/GaVe1BigfjyJFupU8" target="_blank"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
         <a href="#result"><i class="fa-solid fa-square-poll-vertical"></i> Result</a>
         <a href="#admitcard"><i class="fa-solid fa-id-card"></i> Admit Card</a>
         <a href="#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
-        <a href="#vaccancy"><i class="fa-solid fa-briefcase"></i> Vaccancy</a>
+        <a href="vaccancy.html" target="_blank"><i class="fa-solid fa-briefcase"></i> Vaccancy</a>
     </div>
 
     <!-- Header -->
@@ -313,10 +345,10 @@
     </header>
 
     <!-- Main Container -->
-    <div class="container" id="home">
+    <div class="container">
         
       <!-- syllabus -->
-    <div class="container">
+    <div>
 
     <!-- Header Banner -->
     <div class="header-banner">
@@ -550,9 +582,31 @@
     <div class="footer-note">
         यह सिलेबस विद्यार्थियों के समग्र विकास, सामाजिक चेतना और मीडिया टीम के समन्वय हेतु तैयार किया गया है।
     </div>
+    
+    </div>
  
     <!-- Footer -->
-    <footer> 
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> greenikae@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Govt.Process</p>
+                <p><i class="fa-solid fa-location-dot"></i> HSR MG Road, Indiranagar,Bangalore India - 3003</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a>
+                <a href="#member"><i class="fa-solid fa-angle-right"></i> Member</a>
+                <a href="syllabus.html" target="_blank"><i class="fa-solid fa-angle-right"></i> Syllabus</a>
+                <a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Office Time</h4>
+                <p><i class="fa-regular fa-clock"></i> 11:00 AM - 4:00 PM</p>
+                <p>Monday - Friday</p>
+            </div>
+        </div> 
         <div class="footer-bottom">
             <p>&copy; 2026 Shiksha Swasthya Paryavaran by Liviya Green. All Rights Reserved.</p>
         </div>
@@ -568,25 +622,6 @@
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
         }
-
-        // Image Upload Logic
-        document.getElementById('imageUploader').addEventListener('change', function(event) {
-            const files = event.target.files;
-            const grid = document.getElementById('galleryGrid');
-
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                if (file.type.startsWith('image/')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        grid.insertBefore(img, grid.firstChild);
-                    };
-                    reader.readAsDataURL(file);
-                }
-            }
-        });
     </script>
 </body>
 </html>
