@@ -3,134 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiksha, Swasthya, Paryavaran</title>
+    <title>Vacancy - Liviya Green</title>
+    <meta name="description" content="Career & Vacancy Portal - Education, Health & Environment Initiatives">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-          --primary: #2563eb;
-            --primary-hover: #1d4ed8;
-            --bg: #f1f5f9;
-            --card-bg: #ffffff;
-            --text: #0f172a;
-            --text-muted: #64748b;
-            --border: #cbd5e1;
-            --success: #16a34a;
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f8f4;
-            color: #333;  }
-        /* Top Header */
-        header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
-            padding: 15px 25px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .menu-btn {
-            font-size: 26px;
-            color: #1b5e;
-            cursor: pointer;
-            margin-right: 20px;
-        }
-
-        .brand-logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #1b5e;
-            font-size: 24px;
-            border: 2px solid #1b5e;
-        }
-
-        .brand-text h1 {
-            font-size: 20px;
-            color: #1b5e;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .brand-text p {
-            font-size: 12px;
-            color: white;
-        }
-
-        /* Sidebar Navigation */
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            background-color: #000;
-            overflow-x: hidden;
-            transition: 0.3s;
-            padding-top: 60px;
-            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        }
-
-        .sidebar a {
-            padding: 12px 25px;
-            text-decoration: none;
-            font-size: 16px;
-            color: #1b5e;
-            display: block;
-            font-weight: 600;
-            transition: 0.2s;
-            border-bottom: 1px solid #c8e6c9;
-        }
-
-        .sidebar a:hover {
-            background-color: #c8e6c9;
-            color: #1b5e20;
-        }
-
-        .sidebar .closebtn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 28px;
-            border: none;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 15px;
-        
-         width: 100%; max-width: 620px; background: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); padding: 32px; border: 1px solid var(--border); }
-        
         /* vaccancy */
-
-       .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
+        
         .header {
             text-align: center;
             border-bottom: 3px solid #16a085;
@@ -208,55 +87,57 @@
             font-size: 13px;
             font-weight: 600;
         }
-      
-        /* Footer */
-        
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 15px;
-            border-top: 1px solid #1b5e20;
-            font-size: 13px;
-            color: #1b5e;
-        }
     </style>
 </head>
+<body>
 
     <!-- Sidebar Navigation -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="#register"><i class="fa-solid fa-address-card"></i> Register Portal</a>
-        <a href="#member"><i class="fa-solid fa-users"></i> Member</a>
-        <a href="#syllabus"><i class="fa-solid fa-book"></i> Syllabus</a>
-        <a href="https://forms.gle/GaVe1BigfjyJFupU8"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
-        <a href="#result"><i class="fa-solid fa-square-poll-vertical"></i> Result</a>
-        <a href="#admitcard"><i class="fa-solid fa-id-card"></i> Admit Card</a>
-        <a href="#gallery"><i class="fa-solid fa-images"></i> Gallery</a>
-        <a href="#vaccancy"><i class="fa-solid fa-briefcase"></i> Vaccancy</a>
+        <a href="index.html" onclick="closeNav()"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="index.html#about" onclick="closeNav()"><i class="fa-solid fa-address-card"></i> About</a>
+        <a href="index.html#register" onclick="closeNav()"><i class="fa-solid fa-id-card"></i> Register Portal</a>
+        <a href="index.html#gallery" onclick="closeNav()"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="syllabus.html" target="_blank"><i class="fa-solid fa-book"></i> Syllabus</a>
+        <a href="vaccancy.html" target="_blank"><i class="fa-solid fa-briefcase"></i> Vacancy</a>
+        <a href="index.html#contact" onclick="closeNav()"><i class="fa-solid fa-envelope"></i> Contact</a>
     </div>
 
     <!-- Header -->
     <header>
-        <div class="menu-btn" onclick="openNav()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="brand-logo">
-            <div class="logo-icon">
-                <i class="fa-solid fa-tree"></i>
+        <div class="header-left">
+            <div class="menu-btn" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="brand-text">
-                <h1>LIVIYA GREEN</h1>
-                <p>Cultivating Discipline, Health, and a Greener Future for Our Children</p>
+            <div class="brand-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-tree"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>LIVIYA GREEN</h1>
+                    <p>Cultivating Discipline, Health, and a Greener Future for Our Children</p>
+                </div>
             </div>
         </div>
+        
+        <!-- Desktop Navigation (visible on laptop/desktop only) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="index.html#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li><a href="index.html#register"><i class="fa-solid fa-id-card"></i> Register Portal</a></li>
+                <li><a href="index.html#gallery"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                <li><a href="syllabus.html" target="_blank"><i class="fa-solid fa-book"></i> Syllabus</a></li>
+                <li><a href="vaccancy.html" target="_blank"><i class="fa-solid fa-briefcase"></i> Vacancy</a></li>
+                <li><a href="index.html#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Container -->
-    <div class="container" id="home">
-        
-      <!-- syllabus -->
     <div class="container">
+        
+    <section class="section vacancy-container">
     <div class="header">
         <h1>करियर एवं भर्ती अवसर (Career & Vacancy Portal)</h1>
         <p>शिक्षा, स्वास्थ्य एवं पर्यावरण (Education, Health & Environment Initiatives)</p>
@@ -365,15 +246,44 @@
             <span><b>अनुभव:</b> 1+ वर्ष</span>
         </div>
     </div>
- 
-    <!-- Footer -->
     
+    </section>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> greenikae@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Govt. Process</p>
+                <p><i class="fa-solid fa-location-dot"></i> HSR MG Road, Indiranagar, Bangalore India - 3003</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="index.html#about"><i class="fa-solid fa-angle-right"></i> About Us</a>
+                <a href="syllabus.html" target="_blank"><i class="fa-solid fa-angle-right"></i> Syllabus</a>
+                <a href="vaccancy.html" target="_blank"><i class="fa-solid fa-angle-right"></i> Vacancy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Office Time</h4>
+                <p><i class="fa-regular fa-clock"></i> 11:00 AM - 4:00 PM</p>
+                <p>Monday - Friday</p>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Shiksha Swasthya Paryavaran by Liviya Green. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
   
-    <!-- JavaScript Logic -->
+    <!-- JavaScript -->
     <script>
         // Sidebar Functions
         function openNav() {
@@ -384,23 +294,49 @@
             document.getElementById("mySidebar").style.width = "0";
         }
 
-        // Image Upload Logic
-        document.getElementById('imageUploader').addEventListener('change', function(event) {
-            const files = event.target.files;
-            const grid = document.getElementById('galleryGrid');
-
-            for (let i = 0; i < files.length; i++) {
-                const file = files[i];
-                if (file.type.startsWith('image/')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const img = document.createElement('img');
-                        img.src = e.target.result;
-                        grid.insertBefore(img, grid.firstChild);
-                    };
-                    reader.readAsDataURL(file);
-                }
+        // Close sidebar when clicking outside
+        document.addEventListener('click', function(event) {
+            const sidebar = document.getElementById('mySidebar');
+            const menuBtn = document.querySelector('.menu-btn');
+            
+            if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                closeNav();
             }
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== 'javascript:void(0)') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
         });
     </script>
 </body>
